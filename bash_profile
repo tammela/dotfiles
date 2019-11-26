@@ -1,6 +1,7 @@
 force_color_prompt=yes
 
 export GIT_EDITOR=vim
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
 # from sensible bash
 
