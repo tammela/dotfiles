@@ -39,9 +39,7 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
 set autochdir
 
-set shiftwidth=3
-set softtabstop=0
-set expandtab
+set noexpandtab
 
 function Toggletab()
    if &expandtab
