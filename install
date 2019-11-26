@@ -17,7 +17,7 @@ vim +PluginInstall +qall
 
 # tmux + tmux plugins
 mkdir -p ~/.tmux/plugins/tpm/
-cp -R tpm/ ~/.tmux/plugins/tpm/
+cp -R tpm/* ~/.tmux/plugins/tpm/
 cp -i tmux.conf ~/.tmux.conf
 
 # bash aliases
