@@ -1,8 +1,16 @@
 #!/bin/bash
 
-# vim colorscheme
+# initialize dirs
+mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/colors
+
+# vim colorscheme
 cp tammela.vim ~/.vim/colors/
 
 # git config
-cp -r gitconfig ~/.gitconfig
+cp -i gitconfig ~/.gitconfig
+
+# vimrc + vim plugins
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cp -i vimrc ~/.vimrc
+vim +PluginInstall +qall
