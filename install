@@ -14,3 +14,6 @@ cp -i gitconfig ~/.gitconfig
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp -i vimrc ~/.vimrc
 vim +PluginInstall +qall
+
+# tmux
+cp tmux.conf ~/.tmux.conf
