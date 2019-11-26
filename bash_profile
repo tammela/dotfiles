@@ -1,3 +1,5 @@
+force_color_prompt=yes
+
 export GIT_EDITOR=vim
 
 # from sensible bash
