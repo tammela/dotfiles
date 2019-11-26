@@ -15,8 +15,10 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp -i vimrc ~/.vimrc
 vim +PluginInstall +qall
 
-# tmux
-cp tmux.conf ~/.tmux.conf
+# tmux + tmux plugins
+mkdir -p ~/.tmux/plugins/tpm/
+cp -R tpm/ ~/.tmux/plugins/tpm/
+cp -i tmux.conf ~/.tmux.conf
 
 # bash aliases
-cp bash_aliases ~/.bash_aliases
+cp -i bash_aliases ~/.bash_aliases
