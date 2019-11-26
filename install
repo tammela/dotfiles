@@ -20,4 +20,3 @@ cp tmux.conf ~/.tmux.conf
 
 # bash aliases
 cp bash_aliases ~/.bash_aliases
-echo "source ~/.bash_aliases" >> ~/.bashrc
