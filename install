@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# vim colorscheme
+mkdir -p ~/.vim/colors
+cp tammela.vim ~/.vim/colors/
+
+# git config
+cp -r gitconfig ~/.gitconfig

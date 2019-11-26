@@ -1,0 +1,15 @@
+[user]
+   email = pctammela@gmail.com
+   name = Pedro Tammela
+   signingkey = CFA6A6BF5A2397F4F1533EDC79C80C80E96D0EE3
+[merge]
+   tool = meld
+[mergetool "meld"]
+   cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+[credential]
+   helper = cache --timeout=86400
+[sendemail]
+   smtpuser = pctammela@gmail.com
+   smtpserver = smtp.gmail.com
+   smtpencryption = tls
+   smtpserverport = 587
