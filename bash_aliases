@@ -30,6 +30,11 @@ git-reset-branch() {
    git checkout -b "$current"
 }
 
+git-fix-author-cujo() {
+   if [ -z "$1" ]; then echo "which branch tip?"; return; fi
+   git rebase "origin/$1" --exec "(git show | grep '@cujo.com') || git commit --amend --author='Pedro Tammela <pctammela@cujo.com>'"
+}
+
 # X utils
 
 file-copy() {
