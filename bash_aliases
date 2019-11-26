@@ -23,6 +23,13 @@ git-submodule-rm() {
    git rm -f "$1"
 }
 
+git-reset-branch() {
+   current=$(git rev-parse --abbrev-ref HEAD)
+   git checkout origin/"$current"
+   git branch -D "$current"
+   git checkout -b "$current"
+}
+
 # X utils
 
 file-copy() {
