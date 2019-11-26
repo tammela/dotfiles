@@ -30,7 +30,8 @@ filetype plugin indent on    " required
 
 set autoindent
 set cindent
-syntax off
+colorscheme tammela
+syntax on
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
 let g:ycm_show_diagnostics_ui = 0
