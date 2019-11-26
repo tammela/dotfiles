@@ -39,14 +39,14 @@ hi WarningMsg term=standout ctermfg=1 gui=bold guifg=Red
 hi WildMenu term=standout ctermfg=0 ctermbg=3 guifg=Black guibg=Yellow
 hi Folded term=standout ctermfg=4 ctermbg=7 guifg=Black guibg=#e3c1a5
 hi FoldColumn term=standout ctermfg=4 ctermbg=7 guifg=DarkBlue guibg=Gray80
-hi DiffAdd term=bold ctermbg=4 guibg=White
-hi DiffChange term=bold ctermbg=5 guibg=#edb5cd
-hi DiffDelete term=bold cterm=bold ctermfg=4 ctermbg=6 gui=bold guifg=LightBlue guibg=#f6e8d0
-hi DiffText term=reverse cterm=bold ctermbg=1 gui=bold guibg=#ff8060
+hi DiffAdd ctermbg=235 ctermfg=108 guibg=#262626 guifg=#87af87 cterm=reverse gui=reverse
+hi DiffChange ctermbg=235 ctermfg=103 guibg=#262626 guifg=#8787af cterm=reverse gui=reverse
+hi DiffDelete ctermbg=235 ctermfg=131 guibg=#262626 guifg=#af5f5f cterm=reverse gui=reverse
+hi DiffText ctermbg=235 ctermfg=208 guibg=#262626 guifg=#ff8700 cterm=reverse gui=reverse
 hi Cursor guifg=bg guibg=fg
 hi lCursor guifg=bg guibg=fg
 
-" Colors for syntax highlighting
+" Colors for syntax highlighting - disabled!
 hi Comment ctermfg=0
 hi Constant ctermfg=0
 hi Special  ctermfg=0
@@ -57,4 +57,3 @@ hi Type ctermfg=0
 hi Ignore ctermfg=0
 hi Error ctermfg=0
 hi Todo ctermfg=0
-
