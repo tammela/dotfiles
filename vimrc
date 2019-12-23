@@ -72,3 +72,6 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" Spell check
+set spell spelllang=en_us
