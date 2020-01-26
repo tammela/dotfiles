@@ -3,6 +3,10 @@ force_color_prompt=yes
 export GIT_EDITOR=vim
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
+if [ -f ~/.bashrc ]; then
+      . ~/.bashrc
+fi
+
 # from sensible bash
 
 ## GENERAL OPTIONS ##

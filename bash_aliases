@@ -29,3 +29,5 @@ git-reset-branch() {
    git branch -D "$current"
    git checkout -b "$current"
 }
+
+alias ls='ls --color=auto'
