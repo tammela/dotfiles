@@ -40,20 +40,9 @@ set autochdir
 
 set noexpandtab
 
-function Toggletab()
-   if &expandtab
-      echom "kernel's style"
-      set shiftwidth=8
-      set softtabstop=0
-      set noexpandtab
-   else
-      echom "tammela's style"
-      set shiftwidth=3
-      set softtabstop=3
-      set expandtab
-   endif
-endfunction
-nmap <F9> mz:execute Toggletab()<CR>'z
+set shiftwidth=3
+set softtabstop=3
+set expandtab
 
 set laststatus=2
 set backspace=indent,eol,start
