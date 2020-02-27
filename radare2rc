@@ -1,0 +1,8 @@
+eco solarized
+
+e asm.syntax=att
+
+e scr.utf8=true
+e scr.seek=main
+
+e cfg.fortunes.type = nsfw

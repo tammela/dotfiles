@@ -10,6 +10,9 @@ cp tammela.vim ~/.vim/colors/
 # git config
 cp -i gitconfig ~/.gitconfig
 
+# radare2 config
+cp radare2rc ~/.radare2rc
+
 # vimrc + vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp -i vimrc ~/.vimrc
