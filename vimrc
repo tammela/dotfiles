@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,9 +37,15 @@ colorscheme tammela
 
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
+" ctags
+set tags=tags;
 set autochdir
 
-set noexpandtab
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPTag'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = 'find %s -type f'
 
 set shiftwidth=3
 set softtabstop=3
