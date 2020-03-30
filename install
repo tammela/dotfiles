@@ -10,10 +10,6 @@ cp tammela.vim ~/.vim/colors/
 # git config
 cp -i gitconfig ~/.gitconfig
 
-# universal-ctags config
-mkdir -p ~/.ctags.d/
-cp config.ctags ~/.ctags.d/
-
 # radare2 config
 cp radare2rc ~/.radare2rc
 

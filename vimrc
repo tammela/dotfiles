@@ -13,7 +13,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ludovicchabant/vim-gutentags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,7 +43,6 @@ set autochdir
 
 " ctrlp
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPTag'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = 'find %s -type f'
 

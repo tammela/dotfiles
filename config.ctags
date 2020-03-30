@@ -1,8 +1,0 @@
---recurse=yes
---tag-relative=yes
-
---exclude=.git
---exclude=.svn
---exclude=.hg
---exclude=\*.d
---exclude=\*.iso
