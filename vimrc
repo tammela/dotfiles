@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ycm-core/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,10 +42,12 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 set tags=tags;
 set autochdir
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o     " MacOSX/Linux
+
 " ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_user_command = 'find %s -type f'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|cxx|dex|class)$'
 
 set shiftwidth=3
 set softtabstop=3
@@ -66,3 +69,5 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+set completeopt-=preview
