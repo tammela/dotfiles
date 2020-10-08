@@ -30,4 +30,14 @@ git-reset-branch() {
    git checkout -b "$current"
 }
 
+clang-init-c() {
+   cp -iv ~/.clang-configs/clang-tidy-c ./.clang-tidy
+   cp -iv ~/.clang-configs/clang-format ./.clang-format
+}
+
+clang-init-cpp() {
+   cp -iv ~/.clang-configs/clang-tidy-cpp ./.clang-tidy
+   cp -iv ~/.clang-configs/clang-format ./.clang-format
+}
+
 alias ls='ls --color=auto'

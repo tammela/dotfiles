@@ -23,6 +23,9 @@ mkdir -p ~/.tmux/plugins/tpm/
 cp -R tpm/* ~/.tmux/plugins/tpm/
 cp -i tmux.conf ~/.tmux.conf
 
+# clang tooling configs
+cp -a clang ~/.clang-configs
+
 case "$(uname -s)" in
    Darwin)
      echo "Import iTerm2 colors!!"
@@ -34,3 +37,4 @@ case "$(uname -s)" in
      cp -i bash_profile ~/.bash_profile
      ;;
 esac
+
