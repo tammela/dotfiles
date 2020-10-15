@@ -71,3 +71,10 @@ imap <left> <nop>
 imap <right> <nop>
 
 set completeopt-=preview
+
+" line numbers
+set number
+
+" YCM mappings
+nnoremap <F9> :YcmCompleter FixIt<CR>
+nnoremap <F10> :YcmCompleter GetType<CR>
